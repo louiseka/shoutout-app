@@ -11,6 +11,11 @@ body {
     margin: 30px auto;
 }
 
+img {
+    max-width: 160px;
+    margin: 0 auto;
+}
+
 h1,
 h2 {
     font-weight: 700;
@@ -20,10 +25,38 @@ h2 {
 }
 
 h2 {
+    padding: 15px 0;
     font-size: 20px;
 }
 
+textarea {
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    padding: 10px;
+    margin: 20px 0;
+    height: 120px;
+    width: 320px;
+    box-sizing: border-box;
+    resize: none;
+    border: 0;
+    border-radius: 5px;
+    background-color: #444059;
+    color: #F8F8F8;
+
+}
+
 button {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    color: #04131C;
     display: block;
+    background-color: #28A9F1;
+    border: 0;
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px 0px;
+    cursor: pointer;
+
 }
