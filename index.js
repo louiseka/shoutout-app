@@ -23,7 +23,7 @@ submitButtonEl.addEventListener("click", function () {
     let inputValue = textAreaEl.value
     push(shoutoutInDB, inputValue)
 
-    appendShoutoutToListEl(inputValue)
+    // appendShoutoutToListEl(inputValue)
 
     clearTextAreaEl()
 })
@@ -33,6 +33,9 @@ submitButtonEl.addEventListener("click", function () {
 onValue(shoutoutInDB, function (snapshot) {
     if (snapshot.exists()) {
         let shoutoutArray = Object.entries(snapshot.val())
+
+        //Call clear list function
+        clearShoutoutListEl()
 
         for (let i = 0; i < shoutoutArray.length; i++) {
             let currentShoutout = shoutoutArray[i]
@@ -57,8 +60,14 @@ function appendShoutoutToListEl(input) {
 
 }
 
+//Add clear list function
+function clearShoutoutListEl() {
+    shoutoutListEl.innerHTML = ""
+}
+
 
 //Clear input field
 function clearTextAreaEl() {
     textAreaEl.value = ""
 }
+

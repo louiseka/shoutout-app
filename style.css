@@ -71,6 +71,7 @@ ul {
 li {
     background-color: #ffffff;
     color: #04131C;
-    padding: 5px;
+    padding: 10px 15px;
     margin: 5px;
+    min-height: 20px;
 }
